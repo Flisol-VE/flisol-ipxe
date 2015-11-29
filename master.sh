@@ -4,6 +4,9 @@
 # By e1th0r
 
 
+if [ -f /etc/debian_version ]; then
+	
+
 if [ -x /usr/bin/dialog ]; then
 
 
@@ -67,4 +70,8 @@ rm -f temp
 
 else
 	echo "No está instalado Dialog"
+fi;
+
+else 
+	echo "Este script sólo funciona bajo Debian"
 fi;
